@@ -1,0 +1,151 @@
+<mxfile host="Electron" agent="Copilot">
+  <diagram id="lop" name="Class diagram">
+    <mxGraphModel dx="1131" dy="673" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="emp" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fontSize=12;" value="Employee" vertex="1">
+          <mxGeometry height="302" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r0_0" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- id : string" vertex="1">
+          <mxGeometry height="20" width="380" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r0_1" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- fullName : string" vertex="1">
+          <mxGeometry height="20" width="380" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r0_2" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- baseSalary : double" vertex="1">
+          <mxGeometry height="20" width="380" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-s1" parent="emp" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r1_0" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ Employee()" vertex="1">
+          <mxGeometry height="20" width="380" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r1_1" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ Employee(id, fullName)" vertex="1">
+          <mxGeometry height="20" width="380" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r1_2" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ Employee(id, fullName, baseSalary)" vertex="1">
+          <mxGeometry height="20" width="380" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r1_3" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ increaseSalary(amount : double)" vertex="1">
+          <mxGeometry height="20" width="380" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r1_4" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ increaseSalary(value : double, byPercentage : bool)" vertex="1">
+          <mxGeometry height="20" width="380" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r1_5" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ getId() / getFullName() / getBaseSalary()" vertex="1">
+          <mxGeometry height="20" width="380" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r1_6" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ calculateMonthlyCost() : double (virtual)" vertex="1">
+          <mxGeometry height="20" width="380" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r1_7" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ displayInfo() (virtual)" vertex="1">
+          <mxGeometry height="20" width="380" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-s2" parent="emp" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r2_0" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- setBaseSalaryChecked(newValue : double)" vertex="1">
+          <mxGeometry height="20" width="380" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="emp-r2_1" parent="emp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="# requireNonEmpty / requireNonNegative / requirePositive / money" vertex="1">
+          <mxGeometry height="20" width="380" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="se" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fontSize=12;" value="SoftwareEngineer" vertex="1">
+          <mxGeometry height="214" width="300" x="40" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="se-r0_0" parent="se" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- primaryLanguage : string" vertex="1">
+          <mxGeometry height="20" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="se-r0_1" parent="se" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- technicalAllowance : double" vertex="1">
+          <mxGeometry height="20" width="300" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="se-s1" parent="se" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="se-r1_0" parent="se" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ SoftwareEngineer(id, fullName, primaryLanguage)" vertex="1">
+          <mxGeometry height="20" width="300" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="se-r1_1" parent="se" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ SoftwareEngineer(id, fullName, baseSalary," vertex="1">
+          <mxGeometry height="20" width="300" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="se-r1_2" parent="se" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="&amp;nbsp;&amp;nbsp;primaryLanguage, technicalAllowance)" vertex="1">
+          <mxGeometry height="20" width="300" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="se-r1_3" parent="se" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ getPrimaryLanguage() : string" vertex="1">
+          <mxGeometry height="20" width="300" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="se-r1_4" parent="se" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ getTechnicalAllowance() : double" vertex="1">
+          <mxGeometry height="20" width="300" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="se-r1_5" parent="se" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ calculateMonthlyCost() : double (override)" vertex="1">
+          <mxGeometry height="20" width="300" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="se-r1_6" parent="se" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ displayInfo() (override)" vertex="1">
+          <mxGeometry height="20" width="300" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="team" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fontSize=12;" value="ProjectTeam" vertex="1">
+          <mxGeometry height="342" width="370" x="560" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r0_0" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- projectCode : string" vertex="1">
+          <mxGeometry height="20" width="370" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r0_1" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- projectName : string" vertex="1">
+          <mxGeometry height="20" width="370" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r0_2" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- leader : Employee*" vertex="1">
+          <mxGeometry height="20" width="370" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r0_3" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- members : vector&lt;Employee*&gt;" vertex="1">
+          <mxGeometry height="20" width="370" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="team-s1" parent="team" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="370" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_0" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ ProjectTeam(projectCode, projectName)" vertex="1">
+          <mxGeometry height="20" width="370" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_1" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ ProjectTeam(projectCode, projectName, leader : Employee&amp;)" vertex="1">
+          <mxGeometry height="20" width="370" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_2" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ addMember(employee : Employee&amp;) : bool" vertex="1">
+          <mxGeometry height="20" width="370" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_3" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ addMember(employee : Employee&amp;, makeLeader : bool) : bool" vertex="1">
+          <mxGeometry height="20" width="370" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_4" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ removeMember(employeeId : string) : bool" vertex="1">
+          <mxGeometry height="20" width="370" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_5" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ changeLeader(employee : Employee&amp;) : bool" vertex="1">
+          <mxGeometry height="20" width="370" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_6" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ contains(employeeId : string) : bool" vertex="1">
+          <mxGeometry height="20" width="370" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_7" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ calculateTotalMonthlyCost() : double" vertex="1">
+          <mxGeometry height="20" width="370" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_8" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ displayTeam()" vertex="1">
+          <mxGeometry height="20" width="370" y="274" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r1_9" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="+ getProjectCode() / getProjectName() / getLeader() / size()" vertex="1">
+          <mxGeometry height="20" width="370" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="team-s2" parent="team" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="370" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="team-r2_0" parent="team" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=12;" value="- requireNonEmpty() / findById(id : string)" vertex="1">
+          <mxGeometry height="20" width="370" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="ke-thua" edge="1" parent="1" source="se" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1;" target="emp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ket-tap" edge="1" parent="1" source="team" style="startArrow=diamondThin;startFill=0;endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1;fontSize=11;labelBackgroundColor=#FFFFFF;" target="emp" value="leader : 0..1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;members : 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
